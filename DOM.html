@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <button>on/off</button>
+
+    <!-- <script>
+      // var a = document.querySelectorAll("h1")[1];
+      // a.innerText = "this is html";
+      // a.style.color = "brown";
+      // a.style.backgroundColor = "yellow";
+
+      // console.log(a);
+    </script> -->
+    <!-- <script>
+      var x = document.createElement("Table");
+      document.createElement("th");
+      document.table.
+    </script> -->
+    <script>
+      var bulb = document.querySelector("div");
+      var button = document.querySelector("button");
+      bulb.style.width = "100px";
+      bulb.style.height = "100px";
+      bulb.style.backgroundColor = "yellow";
+      bulb.style.borderRadius = "50%";
+      bulb.style.border = "2px solid";
+      let onoff = 1;
+      button.addEventListener("click", function () {
+        if (onoff == 1) {
+          bulb.style.backgroundColor = "yellow";
+          onoff = 0;
+        } else {
+          bulb.style.backgroundColor = "white";
+          onoff = 1;
+        }
+      });
+    </script>
+  </body>
+</html>

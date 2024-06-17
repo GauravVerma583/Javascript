@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var h1 = document.createElement("h1");
+      //   var text = document.createTextNode("this is html");
+      //   console.log(h1);
+      //   console.log(text);
+      //   h1.appendChild(text);
+      //   h1.setAttribute("id", "id1");
+      //   h1.appendChild(text);
+      //   document.body.appendChild(h1);
+      //   var img = document.createElement("img");
+      //   img.setAttribute("src", "../Media/makeup.png");
+      //   img.setAttribute("alt", "img not found");
+      //   console.log(img);
+      //   document.body.appendChild(img);
+      //   img.style.width = "100px";
+      //   img.style.height = "100px";
+      let table = document.createElement("table");
+      let tr = document.createElement("tr");
+      let tr1 = document.createElement("tr");
+      table.appendChild(tr);
+      table.appendChild(tr1);
+      let th = document.createElement("th");
+      let td = document.createElement("td");
+
+      let text = document.createTextNode("name");
+      th.appendChild(text);
+      let text1 = document.createTextNode("Gaurav");
+      td.appendChild(text1);
+      tr.appendChild(th);
+      tr1.appendChild(td);
+      document.body.appendChild(table);
+    </script>
+  </body>
+</html>
